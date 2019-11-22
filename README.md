@@ -79,7 +79,7 @@ Use three simple, common response codes indicating (1) success, (2) failure due 
 
 ### API Resources
 
-  - [POST /api/login](#POST /api/login)
+  - [POST /api/login](#Post)
 
 
 ### POST /api/login
