@@ -19,7 +19,7 @@ This document borrows heavily from:
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
 ### Good URL examples
-* Add a new article to a particular magazine:
+* Authenticate an IF student:
     * POST https://q-academico-lite.herokuapp.com/api/login
     * POST http://q-academico-lite.herokuapp.com/api/login
 
