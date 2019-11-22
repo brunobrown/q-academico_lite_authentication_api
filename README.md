@@ -33,8 +33,7 @@ This document borrows heavily from:
 
 ## HTTP Verbs
 
-HTTP verbs, or methods, should be used in compliance with their definitions under the [HTTP/1.1](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) standard.
-The action taken on the representation will be contextual to the media type being worked on and its current state. Here's an example of how HTTP verbs map to create, read, update, delete operations in a particular context:
+HTTP verbs, or methods, should be used in accordance with their definitions in the HTTP / 1.1 standard. The actions taken in the representation will be contextual to the type of media being worked on and its current state. Here is an example of how HTTP verbs are mapped to authenticate a particular student:
 
 | HTTP METHOD | POST            |
 | ----------- | --------------- | 
