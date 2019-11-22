@@ -6,6 +6,7 @@
 * [Error handling](#error-handling)
 * [Versions](#versions)
 * [Request & Response Examples](#request--response-examples)
+* [More](#more)
 
 ## Guidelines
 
@@ -106,3 +107,7 @@ Response body:
             "matriculado": true
         }
     }
+
+
+## More
+   * https://q-academico-lite.herokuapp.com/swagger-ui.html
