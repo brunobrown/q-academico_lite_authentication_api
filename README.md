@@ -21,7 +21,7 @@ This document borrows heavily from:
 ### Good URL examples
 * Add a new article to a particular magazine:
     * POST https://q-academico-lite.herokuapp.com/api/login
-           http://q-academico-lite.herokuapp.com/api/login
+    * POST http://q-academico-lite.herokuapp.com/api/login
 
 ### Bad URL examples
 * Non-plural noun:
