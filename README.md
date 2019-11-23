@@ -45,6 +45,7 @@ Error responses include a common HTTP status code, message for the developer, in
 Server response code:
 * 200 - OK
 * 400 - Bad Request
+* 404 - Not Found
 * 504 - Gateway Timeout
 
 
