@@ -71,7 +71,6 @@ Response body:
     {
         "nome": "Lorem ipsum dolor sit amet",
         "curso": "Lorem ipsum dolor sit amet",
-        "matriculado": true
         "status": {
             "erro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "situacao": "Concluído",
