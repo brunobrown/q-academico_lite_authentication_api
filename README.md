@@ -2,7 +2,6 @@
 
 * [Guidelines](#guidelines)
 * [HTTP Verbs](#http-verbs)
-* [Responses](#responses)
 * [Error handling](#error-handling)
 * [Versions](#versions)
 * [Request & Response Examples](#request--response-examples)
@@ -10,81 +9,59 @@
 
 ## Guidelines
 
-This document provides guidelines and examples for Q-Academico Lite API.
+This document provides guidelines and examples for Q-Academico Lite - Authentication API.
 
 This document borrows heavily from:
 * [Designing HTTP Interfaces and RESTful Web Services](https://www.youtube.com/watch?v=zEyg0TnieLg)
 * [API Facade Pattern](http://apigee.com/about/resources/ebooks/api-fa%C3%A7ade-pattern), by Brian Mulloy, Apigee
-* [Web API Design](http://pages.apigee.com/web-api-design-ebook.html), by Brian Mulloy, Apigee
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
-### Good URL examples
+### URL examples
 * Authenticate an IF student:
-    * POST https://q-academico-lite.herokuapp.com/api/login
-    * POST http://q-academico-lite.herokuapp.com/api/login
-
-### Bad URL examples
-* Non-plural noun:
-    * 
-* Verb in URL:
-    * 
-* Filter outside of query string
-    * 
+    * POST https://q-academico-lite.herokuapp.com/api/validate
+    * POST http://q-academico-lite.herokuapp.com/api/validate
 
 ## HTTP Verbs
 
 HTTP verbs, or methods, should be used in accordance with their definitions in the HTTP / 1.1 standard. The actions taken in the representation will be contextual to the type of media being worked on and its current state. Here is an example of how HTTP verbs are mapped to authenticate a particular student:
 
-| HTTP METHOD | POST            |
-| ----------- | --------------- | 
-| operation   | Authentication  | 
-| /api/login  | Validate student|
-
-(Example from Web API Design, by Bruno Brown.)
-
-## Responses
-
-* No values in keys
-* No internal-specific names (e.g. "node" and "taxonomy term")
-* Metadata should only contain direct properties of the response set, not properties of the members of the response set
-
+| HTTP METHOD  | POST            |
+| -------------| --------------- | 
+| operation    | Authentication  | 
+| /api/validate| Validate student|
 
 ## Error handling
 
 Error responses include a common HTTP status code, message for the developer, internal error code, links where developers can find more info. For example:
 
     {
-      "status" : 400,
-      "developerMessage" : "Verbose, plain language description of the problem.",
-      "errorCode" : "99999",
-      "moreInfo" : "http://www.example.gov/developer/path/to/help/for/99999,
+         "timestamp": "2019-11-23T10:33:29.726+0000",
+         "status": 400,
+         "error": "Bad Request",
+         "message": "JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is        com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value\n at [Source:    (PushbackInputStream); line: 5, column: 2]",
+      "path": "/api/validate"
     }
 
-Use three simple, common response codes indicating (1) success, (2) failure due to client-side problem, (3) failure due to server-side problem:
+Server response code:
 * 200 - OK
 * 400 - Bad Request
-* 500 - Internal Server Error
+* 504 - Gateway Timeout
 
 
 ## Versions
-
-* Never release an API without a version number.
-* Versions should be integers, not decimal numbers, prefixed with ‘v’. For example:
-    * Good: v1
-    * Bad: -
-* Maintain APIs at least one version back.
+* Good: v1.0.0
+* Bad: -
 
 ## Request & Response Examples
 
-
 ### API Resources
 
-  - [POST /api/login](#Post)
+  - [POST /api/validate](#Post)
 
 
-### POST /api/login
+### POST /api/validate
 
-Example: Login – POST  https://q-academico-lite.herokuapp.com/api/login
+Example: Validate – POST  https://q-academico-lite.herokuapp.com/api/validate
 
 Request body:
 
