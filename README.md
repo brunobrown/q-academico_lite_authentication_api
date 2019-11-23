@@ -3,7 +3,6 @@
 * [Guidelines](#guidelines)
 * [HTTP Verbs](#http-verbs)
 * [Error handling](#error-handling)
-* [Versions](#versions)
 * [Request & Response Examples](#request--response-examples)
 * [More](#more)
 
@@ -47,11 +46,6 @@ Server response code:
 * 400 - Bad Request
 * 404 - Not Found
 * 504 - Gateway Timeout
-
-
-## Versions
-* Good: v1.0.0
-* Bad: -
 
 ## Request & Response Examples
 
