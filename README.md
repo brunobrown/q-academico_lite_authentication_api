@@ -4,7 +4,7 @@
 * [HTTP Verbs](#http-verbs)
 * [Error handling](#error-handling)
 * [Request & Response Examples](#request--response-examples)
-* [Supported States](#currently-supported-states)
+* [Currently Supported States](#currently-supported-states)
 * [More](#more)
 
 ## Guidelines
@@ -79,7 +79,7 @@ Response body:
         }
     }
     
-## Currently supported states:
+## Currently Supported States:
 
    AM; CE; ES; GO; MA; MG; PE; PI; RO; SE
 
