@@ -4,6 +4,7 @@
 * [HTTP Verbs](#http-verbs)
 * [Error handling](#error-handling)
 * [Request & Response Examples](#request--response-examples)
+* [Supported States:](#Currently supported states:)
 * [More](#more)
 
 ## Guidelines
@@ -77,6 +78,10 @@ Response body:
             "matriculado": true
         }
     }
+    
+## Currently supported states:
+
+AM; CE; ES; GO; MA; MG; PE; PI; RO; SE
 
 
 ## More
