@@ -79,7 +79,7 @@ Response body:
         }
     }
     
-## Currently supported states:
+## Currently supported states
 
    AM; CE; ES; GO; MA; MG; PE; PI; RO; SE
 
