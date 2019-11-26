@@ -81,8 +81,9 @@ Response body:
     
 ## Currently Supported States:
 
-   AM; CE; ES; GO; MA; MG; PE; PI; RO; SE
+    AM; CE; ES; GO; MA; MG; PE; PI; RO; SE
 
 
 ## More
-   * https://q-academico-lite.herokuapp.com/swagger-ui.html
+
+    https://q-academico-lite.herokuapp.com/swagger-ui.html
