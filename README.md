@@ -4,7 +4,7 @@
 * [HTTP Verbs](#http-verbs)
 * [Error handling](#error-handling)
 * [Request & Response Examples](#request--response-examples)
-* [Supported States](#currently supported states)
+* [Currently supported states](#currently supported states)
 * [More](#more)
 
 ## Guidelines
