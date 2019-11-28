@@ -19,7 +19,6 @@ This document borrows heavily from:
 ### URL examples
 * Authenticate an IF student:
     * POST https://q-academico-lite.herokuapp.com/api/validate
-    * POST http://q-academico-lite.herokuapp.com/api/validate
 
 ## HTTP Verbs
 
